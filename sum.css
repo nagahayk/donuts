@@ -1,0 +1,48 @@
+body{
+    width:100%;
+    background-image: url("img/home.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+}
+
+h2{
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+}
+.d-contents{
+    width:800px;
+    height:800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.d-content1{
+    display: block;
+    width:200px;
+    height:800px;
+    padding: 0px 0px;
+    margin: 40px;
+    float:left;
+}
+.d-content2{
+    display: block;
+    width:350px;
+    height:800px;
+    padding: 0px 0px;
+    margin: 40px;
+    float:left;
+}
+
+
+
+.d-text{
+    margin:30px 15px;
+    width:300px;
+    height:120px;
+}
+
+.sumPrice{
+    background-color: rgb(135, 255, 255);
+}

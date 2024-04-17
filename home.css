@@ -1,0 +1,418 @@
+#loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 9000;
+  }
+  
+  #animation{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+  #animation p{
+    padding-top:60px;
+  }
+  
+  .loading-circle{
+    position: absolute;
+    animation: bound-anim 1s linear 0s infinite;
+  }
+  
+  @keyframes flush{
+    0%{
+      opacity: 0;
+    }
+    25%{
+      opacity: 0.5;
+    }
+    50%{
+      opacity: 1;
+    }
+    75%{
+      opacity: 0.5;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+  
+  @keyframes spin{
+    0%{
+      transform: rotate(0deg);
+    }
+    25%{
+      transform: rotate(90deg);
+    }
+    50%{
+      transform: rotate(180deg);
+    }
+    75%{
+      transform: rotate(270deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes bound-anim {
+    0%,100% {top: 0;transform: scale(1);}
+    30% {top: -60%; transform: scale(0.96,1.04);}
+    60% {transform: scale(1);}
+    90% {top: 0;transform: scale(1.15,0.9);}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************/
+.h1 {
+    text-align: center;
+    line-height: 80vh;
+   }
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    color:whitesmoke;
+}
+h2{
+    font-family: 'Ubuntu', sans-serif;
+}
+p{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+li {
+    list-style: none;
+   }
+a{
+    color:inherit;
+    text-decoration: none;
+}
+.online{
+    color:red;
+}
+body{
+    width:100%;
+    background-image: url("img/home.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+}
+
+.home{
+    width: 100%;
+    height:100vh;
+}
+/************************ad****************************/
+.ad{
+    height: 100vh;
+}
+.ad_box{
+    background-color: rgba(255, 255, 255, 0.8);
+    width:600px;
+    text-align: center;
+    margin : 0 auto;
+}
+
+.ad p{
+    
+    font-size:20px;
+    padding: 30px 30px;/*余白も指定できる*/
+}
+.ad_title p{
+    text-align:center;
+    font-size: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+/************************ad****************************/
+
+.online{
+    color: rgb(245, 49, 49);
+}
+
+
+
+/*ドーナツ*/
+.online-shop h2{
+    margin-top:100px;
+}
+.d-contents{
+    text-align:center;
+    width:1140px;
+    height:600px;
+    padding: 0px 0px;
+    margin: 0 auto;
+    background-color: rgba(243, 243, 243, 0.8);
+}
+
+.d-box{
+    margin:30px 15px;
+    width:350px;
+    height:500px;
+    float:left;
+}
+
+/*
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） 
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） 
+}
+*/
+
+
+/*ヘッダー*/
+.header-list{
+    height:40px;
+    z-index: 30;
+}
+.header-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.header-list li{
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-block;
+    width: 170px;/*幅も指定できる*/
+    padding-left: 10px;
+    margin: 0px 0;/*余白も指定できる*/
+    vertical-align: middle;/*縦の表示位置も指定できる*/
+}
+
+.btnList,
+a.btnList {
+  color: #fff;
+  background-color: #eb6100;
+}
+.btnList,
+a.btnList:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+/******************************/
+
+
+/*products*/
+.products {
+    background-color: whitesmoke;
+    text-align: center;
+    z-index: 10;
+  }
+
+/*form*/
+.example input[type="submit"]{
+    width: 100px;
+}
+
+
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:94%;
+     margin:0 auto;
+ }
+ 
+ .slider img {
+     width:100%;/*スライダー内の画像を横幅100%に*/
+     height:auto;
+ }
+ 
+ /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+ 
+ .slider .slick-slide {
+     margin:0 10px;
+ }
+ 
+ /*矢印の設定*/
+ 
+ /*戻る、次へ矢印の位置*/
+ .slick-prev, 
+ .slick-next {
+     position: absolute;/*絶対配置にする*/
+     top: 42%;
+     cursor: pointer;/*マウスカーソルを指マークに*/
+     outline: none;/*クリックをしたら出てくる枠線を消す*/
+     border-top: 2px solid #666;/*矢印の色*/
+     border-right: 2px solid #666;/*矢印の色*/
+     height: 15px;
+     width: 15px;
+ }
+ 
+ .slick-prev {/*戻る矢印の位置と形状*/
+     left: -1.5%;
+     transform: rotate(-135deg);
+ }
+ 
+ .slick-next {/*次へ矢印の位置と形状*/
+     right: -1.5%;
+     transform: rotate(45deg);
+ }
+ 
+ /*ドットナビゲーションの設定*/
+ 
+ .slick-dots {
+     text-align:center;
+     margin:20px 0 0 0;
+ }
+ 
+ .slick-dots li {
+     display:inline-block;
+     margin:0 5px;
+ }
+ 
+ .slick-dots button {
+     color: transparent;
+     outline: none;
+     width:4px;/*ドットボタンのサイズ*/
+     height:8px;/*ドットボタンのサイズ*/
+     display:block;
+     border-radius:100%;
+     background:red;/*ドットボタンの色*/
+ }
+ 
+ .slick-dots .slick-active button{
+     background:#333;/*ドットボタンの現在地表示の色*/
+ }
+
+
+
+
+
+
+/*
+ .slide-bl {
+	-webkit-animation: slide-bl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-bl {
+    0% {
+      -webkit-transform: translateY(0) translateX(0);
+              transform: translateY(0) translateX(0);
+    }
+    100% {
+      -webkit-transform: translateY(100px) translateX(-100px);
+              transform: translateY(100px) translateX(-100px);
+    }
+  }
+  @keyframes slide-bl {
+    0% {
+      -webkit-transform: translateY(0) translateX(0);
+              transform: translateY(0) translateX(0);
+    }
+    100% {
+      -webkit-transform: translateY(100px) translateX(-100px);
+              transform: translateY(100px) translateX(-100px);
+    }
+  }
+ */
+
+ .shop-img{
+    padding:30px 50px;
+ }
+.shop-img1{
+    width:100hv;
+}
+.shoptext-right{
+   background-color: rgba(243, 243, 243, 0.8);
+   float:right;
+   width:500px;
+   height:450px;
+   margin:50px 100px 50px 50px;
+   text-align: center;
+   border-radius: 60% 70% 60% 80%;
+
+}
+.shoptext-left{
+    background-color: rgba(243, 243, 243, 0.8);
+    float:left;
+    width:500px;
+    height:450px;
+    margin:50px 100px 50px 50px;
+    text-align: center;
+    border-radius: 60% 70% 60% 80%;
+ 
+ }
+.shoptextbox{
+    margin-top: 100px;
+}
+.shoptext1 p{ 
+    font-size:20px;
+    padding: 5px 10px;/*余白も指定できる*/
+}
+.shop-img2{
+    width:100hv;
+    text-align:right;
+}
+
+.shop-img3{
+    width:100hv;
+}
+.shop-img4{
+    width:100hv;
+    text-align:right;
+}
+
+#cal{
+    margin-top: 40px;
+    width:80px;
+    height:40px;
+    background-color: rgb(255, 255, 255);
+    border-color: #fff;
+}
+
+
+ .flip{
+        -webkit-animation: flip-horizontal-bottom 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+                animation: flip-horizontal-bottom 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    }
+
+@-webkit-keyframes flip-horizontal-bottom {
+    0% {
+        -webkit-transform: rotateX(0);
+                transform: rotateX(0);
+    }
+    100% {
+        -webkit-transform: rotateX(-360deg);
+                transform: rotateX(-360deg);
+    }
+    }
+    @keyframes flip-horizontal-bottom {
+    0% {
+        -webkit-transform: rotateX(0);
+                transform: rotateX(0);
+    }
+    100% {
+        -webkit-transform: rotateX(-360deg);
+                transform: rotateX(-360deg);
+    }
+    }
+      

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    
+    <!--拡大できないようにするレスポンシブ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Dot.Donut</title>
+    <link rel ="stylesheet" href="home.css">
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+     <!--スライダーライブラリ-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <!--ページ内リンク-->
+    <script src="js/jump.js"></script>
+    <!--google font-->
+    <!--英語-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <!--日本語-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loading">
+        <div id="animation">
+          <img class="loading-circle" src="img/do_chip.png" width="100px" height="100px"><!-- .loading-circle -->
+          <p>Now Loading...</p>
+        </div><!-- #animation -->
+      </div>
+
+
+
+
+
+
+
+
+    <div class="home">
+        <p>Dot.Donuts</p>
+        <div class="h1"><h1>Dot.Donuts</h1></div>
+    </div>
+    <div class="ad">
+        <div class="ad_box">
+            <div class="ad_title"><p>おいしい贈りもの</p></div>
+            <p>冬の記憶を閉じ込めたおいしい贈りもの<br>
+                北海道の自然の魅力や美しさに耳を澄まし 目を留め、<br>
+                そこから感じるたくさんのメッセージ。<br>
+                
+                それらを生かし、素材やかたちに想いを込めて<br>
+                お菓子づくりをしています。<br>
+                
+                素材とおいしさにこだわった<br>
+                冬と一緒にやって来る<br>
+                北海道生まれの特別なお菓子です。</p>
+        </div>
+    </div>
+
+    <div class="header-list">
+        <header>
+            <nav>
+            <ul>
+                <li><a href="index.html" class="btnlist">dot.donuts</a></li>
+                <li><a href="#products" class="btnlist">products</a></li>
+                <li><a href="#event" class="btnlist">event</a></li>
+                <li><a href="online.php" class="btnlist"><div class="online">online shop</div></a></li>
+                <li><a href="#about" class="btnlist">pickup</a></li>
+                <li><a href="#store" class="btnlist">store</a></li>
+            </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="products" id="products">
+        <img class="d-img" src="img/do_chip.png" width="300px" height="300px" alt="do_chip" >
+        <img class="d-img" src="img/do_choco2.png" width="300px" height="300px"alt="do_choco" >
+        <img class="d-img" src="img/do_chip.png" width="300px" height="300px" alt="do_chip" >
+        <img class="d-img" src="img/do_choco2.png" width="300px" height="300px"alt="do_choco" >
+        <h2>staple products</h2>
+        <img class="d-img" src="img/do_chip.png" width="300px" height="300px" alt="do_chip" >
+        <img class="d-img" src="img/do_choco2.png" width="300px" height="300px"alt="do_choco" >
+        <img class="d-img" src="img/do_chip.png" width="300px" height="300px" alt="do_chip" >
+        <img class="d-img" src="img/do_choco2.png" width="300px" height="300px"alt="do_choco" >
+    </div>
+    <div class="event" id="event">
+        <h2>event</h2>
+        <ul class="slider">
+            <li><img src="img/banar1.png" alt="banar1"></li>
+            <li><img src="img/banar2.png" alt="banar2"></li>
+            <li><img src="img/banar3.png" alt="banar3"></li>
+            <li><img src="img/banar4.png" alt="banar4"></li>
+            <li><img src="img/banar5.png" alt="banar5"></li>
+            <li><img src="img/banar6.png" alt="banar6"></li>
+        </ul>
+    </div>
+    <div class="about" id="about">
+        <h2>about</h2>
+        <div class="shop-img1">
+        <img class="shop-img" src="img/shop1.png" width="500" height="500px" alt="shop1">
+        <div class="shoptext-right">
+            <div class="shoptextbox">
+            <p>体にやさしくおいしいドーナツのお店です。</p>
+            <p>安心して召し上がっていただけるよう、</p>
+            <p>できるだけ自然で添加物を含まない材料を選び、</p>
+            <p>お店で一つひとつ丁寧に手作りしています。</p>
+            </div>
+        </div>
+        
+        </div>
+        <div class="shop-img2">
+            <div class="shoptext-left">
+            <div class="shoptextbox">
+                <p>体にやさしくおいしいドーナツのお店です。</p>
+                <p>安心して召し上がっていただけるよう、</p>
+                <p>できるだけ自然で添加物を含まない材料を選び、</p>
+                <p>お店で一つひとつ丁寧に手作りしています。</p>
+            </div> 
+            </div>
+        <img class="shop-img" src="img/shop2.png" width="500" height="500px"  alt="shop2">
+        </div>
+        <div class="shop-img3">
+        <img class="shop-img" src="img/shop3.png" width="500" height="500px"  alt="shop3">
+        <div class="shoptext-right">
+            <div class="shoptextbox">
+            <p>体にやさしくおいしいドーナツのお店です。</p>
+            <p>安心して召し上がっていただけるよう、</p>
+            <p>できるだけ自然で添加物を含まない材料を選び、</p>
+            <p>お店で一つひとつ丁寧に手作りしています。</p>
+            </div>
+        </div>
+        </div>
+        <!--
+        <div class="shop-img4">
+            <div class="shoptext-left">
+                <div class="shoptextbox">
+                    <p>体にやさしくおいしいドーナツのお店です。</p>
+                    <p>安心して召し上がっていただけるよう、</p>
+                    <p>できるだけ自然で添加物を含まない材料を選び、</p>
+                    <p>お店で一つひとつ丁寧に手作りしています。</p>
+                </div> 
+                </div>
+        <img class="shop-img" src="img/shop4.png" width="500" height="500px"  alt="shop4">
+        </div>
+    </div>
+    -->
+    <div class="store" id="store">
+        <h2>store</h2>
+    </div>
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- GSAP ScrollTrirrer CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- 自作JSファイル(GSAPより後に書く) -->
+    <script src="js/jump.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+        <img class="h-img" src="img/do_red.jpg" alt="do_red" >
+        <img class="h-img" src="img/do_white.jpg" alt="do_white" >
+
+/*スピン*/css
+/** input/スピンボタンのラップ要素 **/
+.number-spinner-wrap{
+    position: relative;
+    display: block;
+    width: 150px !important;
+    height: 2rem;
+}
+/** デフォルトのスピンボタンを隠す **/
+.number-spinner-wrap input::-webkit-outer-spin-button,
+.number-spinner-wrap input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/** input要素 **/
+.number-spinner-wrap input{
+  width: 100%; height: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
+}
+/** スピンボタン要素 **/
+.number-spinner-wrap .spinner{
+  position: absolute;
+  top: 50%;
+  width: 1.2rem;
+  transform: translate(0, -50%);
+  font-size: 1rem;
+  padding: 2px .5rem;
+  text-align: center;
+  background: lightgray;
+  cursor: pointer;
+  user-select: none;
+}
+/** 減算のスピンボタン要素 **/
+.number-spinner-wrap .spinner-down{
+  left: 2px;
+  border-right: 1px solid lightgray;
+}
+/** 加算のスピンボタン要素 **/
+.number-spinner-wrap .spinner-up{
+  right: 2px;
+  border-left: 1px solid lightgray;
+}
+
+<html>
+        <label class="number-spinner-wrap">
+                <input type="number" step="2" value="16">
+                <span class="spinner spinner-down">-</span>
+                <span class="spinner spinner-up">+</span>
+            </label>
+</html>
+
+
+js
+/*スピン*/
+const $wrap = document.querySelector('.number-spinner-wrap')
+const $input = $wrap.querySelector('input')
+$wrap.querySelector('.spinner-down').onclick = ()=>{
+  $input.stepDown()
+}
+$wrap.querySelector('.spinner-up').onclick = ()=>{
+  $input.stepUp()
+}
